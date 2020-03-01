@@ -66,3 +66,38 @@ class Dog extends Animal
     System.out.println("Hello, my name is: "+this.name+" I am "+this.age+" years old, Wanna play with me?");
   }
 }
+
+class Zoo
+{
+  Animal animal;
+  List<Animal> zoo=new ArrayList<Animal>();
+  void addAnimal(Animal newAnimal)
+  {
+    zoo.add(newAnimal);
+  }
+  void displayAnimals()
+  {
+    for (int i=0;i<zoo.size() ;i++ ) {
+      animal=zoo.get(i);
+      System.out.println("Type: "+animal.type+" Name: "+animal.name);
+  }
+}
+  void displayAnimals(String animaltype)
+  {
+    for (int i=0;i<zoo.size() ;i++ ) {
+      animal=zoo.get(i);
+      if(animaltype.equals(animal.type))
+      {
+        System.out.println("Type: "+animal.type+" Name: "+animal.name+" Age: "+animal.age);
+      }
+
+  }
+}
+  void feedingTime()
+  {
+    for (int i=0;i<zoo.size() ;i++ ) {
+      animal=zoo.get(i);
+      animal.talk();
+    }
+  }
+}
