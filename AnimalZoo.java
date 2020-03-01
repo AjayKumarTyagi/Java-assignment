@@ -47,3 +47,22 @@ class Monkey extends Animal
     System.out.println("Hello, my name is: "+this.name+" I am "+this.age+" years old, I want that banana");
   }
 }
+class Dog extends Animal
+{
+  public String getName(String name)
+  {
+    this.type="dog";
+    this.name=name;
+    return this.name;
+  }
+  public int getAge(int age)
+  {
+    this.age=age;
+    return this.age;
+  }
+  public void talk()
+  {
+    System.out.println("Dog barks, and says ");
+    System.out.println("Hello, my name is: "+this.name+" I am "+this.age+" years old, Wanna play with me?");
+  }
+}
