@@ -28,3 +28,22 @@ class Tiger extends Animal
     System.out.println("Hello, my name is: "+this.name+" I am "+this.age+" years old, I want to eat you");
   }
 }
+class Monkey extends Animal
+{
+  public String getName(String name)
+  {
+    this.type="monkey";
+    this.name=name;
+    return this.name;
+  }
+  public int getAge(int age)
+  {
+    this.age=age;
+    return this.age;
+  }
+  public void talk()
+  {
+    System.out.println("Monkey squeaks, and says ");
+    System.out.println("Hello, my name is: "+this.name+" I am "+this.age+" years old, I want that banana");
+  }
+}
