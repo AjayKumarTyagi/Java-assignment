@@ -162,3 +162,44 @@ public class Main
             System.out.println("invalid choice");
             break;
         }
+          break;
+        case 2:
+        zoo.displayAnimals();
+        break;
+        case 3:
+        System.out.println("Select the types: ");
+        System.out.println("1. Tiger");
+        System.out.println("2. Monkey");
+        System.out.println("3. Dog");
+        int typeanimal=scan.nextInt();
+        switch(typeanimal)
+        {
+          case 1:
+            zoo.displayAnimals("tiger");
+            break;
+          case 2:
+          zoo.displayAnimals("monkey");
+          break;
+          case 3:
+          zoo.displayAnimals("dog");
+          break;
+          default:
+          System.out.println("invalid choice");
+          break;
+        }
+        break;
+        case 4:
+        zoo.feedingTime();
+        break;
+        case 5:
+        System.out.println("Hope you have great time, See you again!");
+        System.exit(0);
+        break;
+        default:
+        System.out.println("invalid choice");
+        break;
+      }
+    } while (true);
+  }
+}
+
