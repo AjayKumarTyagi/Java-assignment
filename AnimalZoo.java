@@ -101,3 +101,22 @@ class Zoo
     }
   }
 }
+
+public class Main
+{
+  public static void main(String[] args) {
+    Scanner scan=new Scanner(System.in);
+    String name="";
+    int choice=0,age=0,choice2=0;
+    Animal tiger=new Tiger();
+    Animal monkey=new Monkey();
+    Animal dog=new Dog();
+    Zoo zoo=new Zoo();
+    do {
+      System.out.println("Welcome to the Zoo");
+      System.out.println("1. Add an animal to the zoo");
+      System.out.println("2. Display all animals in the zoo");
+      System.out.println("3. Display name and age of animals");
+      System.out.println("4. Feed animals");
+      System.out.println("5. Exit the zoo");
+      choice=scan.nextInt();
