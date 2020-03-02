@@ -120,3 +120,45 @@ public class Main
       System.out.println("4. Feed animals");
       System.out.println("5. Exit the zoo");
       choice=scan.nextInt();
+      switch(choice)
+      {
+        case 1:
+        System.out.println("1. Add a tiger");
+        System.out.println("2. Add a monkey");
+        System.out.println("3. Add a dog");
+        choice2=scan.nextInt();
+        scan.nextLine();
+        switch(choice2)
+        {
+          case 1:
+          System.out.println("Enter name of the tiger: ");
+          name=scan.nextLine();
+          tiger.getName(name);
+          System.out.println("Enter the age of the tiger: ");
+          age=scan.nextInt();
+          scan.nextLine();
+          tiger.getAge(age);
+          zoo.addAnimal(tiger);
+          break;
+          case 2:
+          System.out.println("Enter name of the monkey: ");
+          name=scan.nextLine();
+          monkey.getName(name);
+          System.out.println("Enter the age of the monkey: ");
+          age=scan.nextInt();
+          monkey.getAge(age);
+          zoo.addAnimal(monkey);
+          break;
+          case 3:
+          System.out.println("Enter name of the dog: ");
+          name=scan.nextLine();
+          dog.getName(name);
+          System.out.println("Enter the age of the dog: ");
+          age=scan.nextInt();
+          dog.getAge(age);
+          zoo.addAnimal(dog);
+          break;
+          default:
+            System.out.println("invalid choice");
+            break;
+        }
