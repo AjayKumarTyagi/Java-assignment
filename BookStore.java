@@ -41,3 +41,20 @@ class Book extends Publication
     System.out.println("Page no: "+this.pageno);
   }
 }
+
+class Tape extends Publication
+{
+  double playingtime;
+  Tape(String title, double price,double playingtime)
+  {
+    super(title,price);
+    this.playingtime=playingtime;
+    System.out.println("Tape base class constructore");
+  }
+  void display()
+  {
+    System.out.println("Title: "+this.title+"\tCost: "+this.price);
+    System.out.println("Playing time: "+this.playingtime);
+  }
+}
+
