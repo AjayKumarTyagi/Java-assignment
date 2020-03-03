@@ -58,3 +58,42 @@ class Tape extends Publication
   }
 }
 
+public class BookStore
+{
+  public static void main(String[] args) {
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Which book you want to read? ");
+    String name=scan.nextLine();
+    System.out.println("Enter its price: ");
+    int price=scan.nextInt();
+    System.out.println("Enter its page no: ");
+    int page=scan.nextInt();
+    System.out.println("Enter no of sales: ");
+    int sale=scan.nextInt();
+    Book b1=new Book(name,price,page);
+    b1.getSales(sale);
+    b1.display();
+    b1.DisplaySales();
+    System.out.println("\nWhich audio book you want to buy?");
+    scan.nextLine();
+    name=scan.nextLine();
+    System.out.println("Enter its price: ");
+    price=scan.nextInt();
+    System.out.println("Enter its playing time: ");
+    double play=scan.nextDouble();
+    System.out.println("Enter no of sales: ");
+    sale=scan.nextInt();
+    Tape t1=new Tape(name,price,play);
+
+    t1.display();
+    t1.getSales(sale);
+    t1.DisplaySales();
+    b1=null;
+    System.gc();
+    System.out.println("\nobject of book deleted");
+    t1=null;
+    System.gc();
+    System.out.println("object of tape deleted");
+  }
+}
+
