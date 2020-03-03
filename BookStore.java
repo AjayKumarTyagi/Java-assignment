@@ -25,3 +25,19 @@ class Publication implements Sales
     System.out.println("Total sales: "+this.sales);
   }
 }
+
+class Book extends Publication
+{
+  int pageno;
+  Book(String title, double price,int pageno)
+  {
+    super(title,price);
+    this.pageno=pageno;
+    System.out.println("Book base class constructor called");
+  }
+  public void display()
+  {
+    System.out.println("Title: "+this.title+"\tCost: "+this.price);
+    System.out.println("Page no: "+this.pageno);
+  }
+}
