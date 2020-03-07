@@ -21,3 +21,9 @@ class Rectangle
     double per=(2*(this.length+this.width));
     return per;
   }
+
+  public double area()
+  {
+    double ar=this.length*this.width;
+    return ar;
+  }
