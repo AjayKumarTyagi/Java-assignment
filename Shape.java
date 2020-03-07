@@ -15,3 +15,9 @@ class Rectangle
     this.length=1;
     this.width=1;
   }
+
+  public double perimeter()
+  {
+    double per=(2*(this.length+this.width));
+    return per;
+  }
