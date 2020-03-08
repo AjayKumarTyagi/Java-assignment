@@ -11,3 +11,9 @@ class Account
   String type="";
   double principle;
   double rate=6.0;
+Account(String name,double balance)
+  {
+    this.customer_name=name;
+    this.accountno=accno++;
+    this.balance=balance;
+  }
