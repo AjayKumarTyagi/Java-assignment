@@ -27,3 +27,17 @@ class Rectangle
     double ar=this.length*this.width;
     return ar;
   }
+
+  public void setLength(double length)
+  {
+try{
+    if(length<0.0 || length>20.0)
+       throw new CustomException("Error: width either negative or greater than 20");
+     }
+       catch(CustomException e){
+         System.out.println(e.getMessage());
+    this.length=length;
+
+
+  }
+  }
