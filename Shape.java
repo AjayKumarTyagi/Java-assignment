@@ -54,3 +54,27 @@ try{
         this.length=length;
 }
 }
+
+public class Shape
+{
+  public static void main(String[] args) {
+    Scanner scan=new Scanner(System.in);
+    double per=0;
+    double ar=0;
+    double len=0;
+    double wid=0;
+    Rectangle r1=new Rectangle();
+    System.out.println("Enter length of the rectangle (between 0 and 20): ");
+    len=scan.nextDouble();
+    r1.setLength(len);
+    System.out.println("Enter width of the rectangle (between 0 and 20): ");
+    wid=scan.nextDouble();
+     r1.setWidth(wid);
+
+
+  per=r1.perimeter();
+  ar=r1.area();
+   System.out.println("perimeter= "+per);
+   System.out.println("Area= "+ar);
+  }
+}
