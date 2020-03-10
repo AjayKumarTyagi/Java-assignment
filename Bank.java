@@ -29,3 +29,7 @@ void withdrawal(double amt){
   }else
   this.balance-=amt;
 }
+void checkBalance()
+{
+  System.out.println("balance remaining: "+this.balance);
+}
