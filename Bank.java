@@ -20,3 +20,12 @@ Account(String name,double balance)
 void deposite(double amt){
     this.balance+=amt;
   }
+void withdrawal(double amt){
+  double temp=this.balance-amt;
+  if(temp<minbalance)
+  {
+    this.balance-=ser_charge;
+    this.balance-=amt;
+  }else
+  this.balance-=amt;
+}
