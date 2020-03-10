@@ -33,3 +33,14 @@ void checkBalance()
 {
   System.out.println("balance remaining: "+this.balance);
 }
+void getInterest(double amt)
+{
+  principle=amt;
+  double amount=principle*((1+rate/100));
+  System.out.println("\nInterest after 1 year: "+amount);
+  amount=principle*((1+rate/100)*(1+rate/100));
+  System.out.println("Interest after 2 year: "+amount);
+  amount=principle*((1+rate/100)*(1+rate/100)*(1+rate/100));
+  System.out.println("Interest after 3 year: "+amount+"\n");
+}
+}
