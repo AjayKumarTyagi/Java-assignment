@@ -17,3 +17,6 @@ Account(String name,double balance)
     this.accountno=accno++;
     this.balance=balance;
   }
+void deposite(double amt){
+    this.balance+=amt;
+  }
