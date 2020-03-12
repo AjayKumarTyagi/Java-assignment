@@ -44,3 +44,12 @@ void getInterest(double amt)
   System.out.println("Interest after 3 year: "+amount+"\n");
 }
 }
+
+class sav_acc extends Account
+{
+  sav_acc(String name,double balance)
+  {
+    super(name,balance);
+    this.type="saving";
+  }
+}
