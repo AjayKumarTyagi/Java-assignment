@@ -53,3 +53,11 @@ class sav_acc extends Account
     this.type="saving";
   }
 }
+
+class cur_acc extends Account
+{
+  cur_acc(String name,double balance)
+  {
+    super(name,balance);
+    this.type="current";
+  }
