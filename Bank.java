@@ -61,3 +61,14 @@ class cur_acc extends Account
     super(name,balance);
     this.type="current";
   }
+  void chequewithdrawal(double amt)
+  {
+    double temp=this.balance-amt;
+    if(temp<minbalance)
+    {
+      this.balance-=ser_charge;
+      this.balance-=amt;
+    }else
+    this.balance-=amt;
+  }
+}
