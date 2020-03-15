@@ -78,3 +78,7 @@ class Customer
   Scanner scan=new Scanner(System.in);
   Account account;
   List<Account>acc =new ArrayList<Account>();
+  public void addaccount(Account newAcc)
+  {
+    acc.add(newAcc);
+  }
