@@ -72,3 +72,9 @@ class cur_acc extends Account
     this.balance-=amt;
   }
 }
+
+class Customer
+{
+  Scanner scan=new Scanner(System.in);
+  Account account;
+  List<Account>acc =new ArrayList<Account>();
