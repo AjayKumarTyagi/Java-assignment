@@ -82,3 +82,10 @@ class Customer
   {
     acc.add(newAcc);
   }
+  public void displayAccount()
+  {
+    for (int i=0;i<acc.size() ;i++ ) {
+      account=acc.get(i);
+      System.out.println("Type: "+account.type+" \tName: "+account.customer_name+"\nAccount no: "+account.accountno+"\t");
+      account.checkBalance();
+  }}
