@@ -100,3 +100,39 @@ class Customer
       }
     }
   }
+  
+  public void addAmount(int no,int no2,double amt)
+{
+  for (int i=0;i<acc.size() ;i++ ) {
+    account=acc.get(i);
+    if(no==account.accountno)
+    {
+      if(account.type=="current")
+      {
+        System.out.println("1. Use cash to make transaction");
+        System.out.println("2. Use cheque to make transaction");
+        int ans=scan.nextInt();
+        switch(ans)
+        {
+          case 1:
+          account.withdrawal(amt);
+          break;
+          case 2:
+          account.withdrawal(amt);
+          break;
+          default:
+          System.out.println("Invalid choice, transaction failed");
+          return;
+        }
+      }else
+      account.withdrawal(amt);
+    }
+  }
+    for (int i=0;i<acc.size() ;i++ ) {
+      account=acc.get(i);
+      if(no2==account.accountno)
+      {
+        account.deposite(amt);
+      }
+}
+}
