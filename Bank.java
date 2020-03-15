@@ -88,4 +88,15 @@ class Customer
       account=acc.get(i);
       System.out.println("Type: "+account.type+" \tName: "+account.customer_name+"\nAccount no: "+account.accountno+"\t");
       account.checkBalance();
-  }}
+  }
+  }
+  public void addAmount(int no,double amt)
+  {
+    for (int i=0;i<acc.size() ;i++ ) {
+      account=acc.get(i);
+      if(no==account.accountno)
+      {
+        account.deposite(amt);
+      }
+    }
+  }
