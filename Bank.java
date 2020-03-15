@@ -136,3 +136,17 @@ class Customer
       }
 }
 }
+  
+public void takeAmonut(int no,double amt)
+{
+  for (int i=0;i<acc.size() ;i++ ) {
+    account=acc.get(i);
+    if(no==account.accountno)
+    {
+      account.withdrawal(amt);
+    }
+    else{
+      System.out.println("transaction failed, account no not found");
+    }
+  }
+}
