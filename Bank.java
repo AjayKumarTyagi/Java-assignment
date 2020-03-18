@@ -150,3 +150,24 @@ public void takeAmonut(int no,double amt)
     }
   }
 }
+  public void calcInterest(int no)
+{
+  double amt;
+  for (int i=0;i<acc.size() ;i++ ) {
+    account=acc.get(i);
+    if(no==account.accountno) // searches for account
+    {
+      if(account.type.equals("current"))
+      {
+        System.out.println("\nthis type of account does not provide interest\n");
+      }else{
+      amt=account.balance;
+      account.getInterest(amt);
+    }}
+    else{
+      // if acc not found shows message
+      System.out.println("transaction failed, account no not found");
+    }
+  }
+}
+}
