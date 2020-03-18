@@ -191,3 +191,19 @@ public class Bank{
       System.out.println("5. See interest on your amount");
       System.out.println("6. Exit the bank");
       int choice=scan.nextInt();
+      switch(choice)
+      {
+        case 1:
+        System.out.println("1. Current account");
+        System.out.println("2. Saving account");
+        int choice2=scan.nextInt();
+        switch (choice2) {
+          case 1:
+          System.out.println("Enter name: ");
+          scan.nextLine();
+          name=scan.nextLine();
+          System.out.println("How much money you want to add? ");
+          amt=scan.nextInt();
+          acc2=new cur_acc(name,amt); // calls construcctor
+          cuss.addaccount(acc2); // calls method to add acc in list
+          break;
