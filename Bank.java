@@ -207,3 +207,17 @@ public class Bank{
           acc2=new cur_acc(name,amt); // calls construcctor
           cuss.addaccount(acc2); // calls method to add acc in list
           break;
+              case 2:
+          scan.nextLine();
+          System.out.println("Enter name: ");
+          name=scan.nextLine();
+          System.out.println("How much money you want to add? ");
+          amt=scan.nextInt();
+          acc1=new sav_acc(name,amt); // calls constructor
+          cuss.addaccount(acc1);  // calls method to add acc in list
+          break;
+          default:
+          System.out.println("invalid choice, account creation failed");
+          break;
+        }
+        break;
