@@ -181,3 +181,13 @@ public class Bank{
     Account acc2;
     Account acc1;
     Customer cuss=new Customer();
+    do {
+      // menu driven approach
+      System.out.println("Welcome to the ICICI Bank \n We see, you see, I see");
+      System.out.println("1. Add an account");
+      System.out.println("2. Display all accounts");
+      System.out.println("3. Deposite amount");
+      System.out.println("4. Withdraw amount");
+      System.out.println("5. See interest on your amount");
+      System.out.println("6. Exit the bank");
+      int choice=scan.nextInt();
