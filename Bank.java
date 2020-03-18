@@ -221,3 +221,6 @@ public class Bank{
           break;
         }
         break;
+          case 2:
+        cuss.displayAccount(); // calls method to display acc info
+        break;
