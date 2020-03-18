@@ -171,3 +171,13 @@ public void takeAmonut(int no,double amt)
   }
 }
 }
+
+public class Bank{
+  public static void main(String[] args) {
+    Scanner scan=new Scanner(System.in);
+    int no,no2;
+    double amt;
+    String name="";
+    Account acc2;
+    Account acc1;
+    Customer cuss=new Customer();
