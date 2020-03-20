@@ -259,3 +259,8 @@ public class Bank{
         amt=scan.nextInt();
         cuss.takeAmonut(no,amt); // calls method to search for acc and withraw money
         break;
+          case 5:
+        System.out.println("Enter your bank account number: ");
+        no=scan.nextInt();
+        cuss.calcInterest(no); // calls method which calculates interest
+        break;
