@@ -252,3 +252,10 @@ public class Bank{
           break;
         }
         break;
+          case 4:
+        System.out.println("Enter your bank account number: ");
+        no=scan.nextInt();
+        System.out.println("How much money you want to withdraw? ");
+        amt=scan.nextInt();
+        cuss.takeAmonut(no,amt); // calls method to search for acc and withraw money
+        break;
