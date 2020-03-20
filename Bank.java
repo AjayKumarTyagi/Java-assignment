@@ -224,3 +224,31 @@ public class Bank{
           case 2:
         cuss.displayAccount(); // calls method to display acc info
         break;
+          case 3:
+        System.out.println("1. Deposite in your account");
+        System.out.println("2. Deposite in anotheer account");
+        int choice3=scan.nextInt();
+        switch(choice3)
+        {
+          case 1:
+          System.out.println("What is your account number? ");
+          no=scan.nextInt();
+          System.out.println("How much amount? ");
+          amt=scan.nextInt();
+          cuss.addAmount(no,amt); // calls method to deposite amount in own acc
+          break;
+          case 2:
+          System.out.println("What is your account number? ");
+          no=scan.nextInt();
+          System.out.println("How much amount? ");
+          amt=scan.nextInt();
+          System.out.println("Amount deposite to which account? ");
+          no2=scan.nextInt();
+          // polymorphism achieved
+          cuss.addAmount(no,no2,amt); // calls method to deposite amount in other's acc
+          break;
+          default:
+          System.out.println("Trancsaction failed");
+          break;
+        }
+        break;
