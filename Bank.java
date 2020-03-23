@@ -264,3 +264,14 @@ public class Bank{
         no=scan.nextInt();
         cuss.calcInterest(no); // calls method which calculates interest
         break;
+          case 6:
+        System.out.println("Thank you for choosing IseeIseeIsee bank");
+        System.exit(0); // exits the program
+        break;
+        default:
+        System.out.println("Invalid choice");
+        break;
+      }
+    } while (true);
+  }
+}
