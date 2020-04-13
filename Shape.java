@@ -61,6 +61,14 @@ class CatesianRectangle
   double y[]=new double[4]; // array to store y coordinate
   double length,width;
   int i;
+    // constructor assigning values
+  CatesianRectangle(double x[],double y[])
+  {
+    for (i=0;i<4 ;i++ ) {
+      this.x[i]=x[i];
+      this.y[i]=y[i];
+    }
+  }
 
 public class Shape
 {
