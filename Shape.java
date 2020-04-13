@@ -69,6 +69,12 @@ class CatesianRectangle
       this.y[i]=y[i];
     }
   }
+  // method to calculate perimeter
+  public double perimeter()
+  {
+    double per=(2*(this.length+this.width));
+    return per;
+  }
 
 public class Shape
 {
