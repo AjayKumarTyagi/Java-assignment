@@ -55,6 +55,13 @@ try{
 }
 }
 
+class CatesianRectangle
+{
+  double x[]=new double[4]; // array to store x coordinates
+  double y[]=new double[4]; // array to store y coordinate
+  double length,width;
+  int i;
+
 public class Shape
 {
   public static void main(String[] args) {
