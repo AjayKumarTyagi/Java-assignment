@@ -75,6 +75,12 @@ class CatesianRectangle
     double per=(2*(this.length+this.width));
     return per;
   }
+    // method to calculate area
+  public double area()
+  {
+    double ar=this.length*this.width;
+    return ar;
+  }
 
 public class Shape
 {
