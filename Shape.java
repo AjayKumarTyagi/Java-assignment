@@ -81,6 +81,21 @@ class CatesianRectangle
     double ar=this.length*this.width;
     return ar;
   }
+  public void setLength()
+  {
+try{
+  for (i=0;i<4 ;i++ ) {
+    if(x[i]<=0 || y[i]<=0 || x[i]>=20 || y[i]>=20)
+    // throws user defined exception
+       throw new CustomException("Error: length either negative or greater than 20");
+     }
+   }
+       catch(CustomException e){ // cates user defined exception
+         System.out.println(e.getMessage()); // displays user message
+       }
+       // calculates length from coordinates
+       length=Math.sqrt((x[0]-x[3])*(x[0]-x[3])+(y[0]-y[3])*(y[0]-y[3]));
+}
 
 public class Shape
 {
