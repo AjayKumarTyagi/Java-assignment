@@ -96,6 +96,21 @@ try{
        // calculates length from coordinates
        length=Math.sqrt((x[0]-x[3])*(x[0]-x[3])+(y[0]-y[3])*(y[0]-y[3]));
 }
+  public void setWidth()
+  {
+    try{
+      for (i=0;i<4 ;i++ ) {
+        if(x[i]<=0 || y[i]<=0 || x[i]>=20 || y[i]>=20)
+        // throws user defined exception
+           throw new CustomException("Error: width either negative or greater than 20");
+         }
+       }
+           catch(CustomException e){
+             System.out.println(e.getMessage()); // shows user message
+             }
+             // calculates widht from coordinates
+        width=Math.sqrt((x[0]-x[1])*(x[0]-x[1])+(y[0]-y[1])*(y[0]-y[1]));
+}
 
 public class Shape
 {
