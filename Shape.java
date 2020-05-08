@@ -111,6 +111,18 @@ try{
              // calculates widht from coordinates
         width=Math.sqrt((x[0]-x[1])*(x[0]-x[1])+(y[0]-y[1])*(y[0]-y[1]));
 }
+  public void isRectangle()
+    {
+      // calculates length of diagnols from coordinates
+		double diag1 =Math.ceil(Math.sqrt((x[0]-x[2])*(x[0]-x[2])+(y[0]-y[2])*(y[0]-y[2])));
+		double diag2=Math.ceil(Math.sqrt((x[1]-x[3])*(x[1]-x[3])+(y[1]-y[3])*(y[1]-y[3])));
+		if(diag1==diag2) // if both diagnols are equal, it's a rectangle
+		System.out.println("\nThis is a reactangle");
+		else{
+		System.out.println("\nError: This is not a rectangle");
+    System.exit(0);
+  }
+}
 
 public class Shape
 {
