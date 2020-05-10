@@ -123,6 +123,18 @@ try{
     System.exit(0);
   }
 }
+	void isSquare()
+{
+  // if length = widht, it's a square
+  if(this.length==this.width)
+  {
+    System.out.println("It is also a square");
+  }
+  else
+  System.out.println("It is not a square");
+}
+}
+
 
 public class Shape
 {
